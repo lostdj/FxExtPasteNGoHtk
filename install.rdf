@@ -7,7 +7,7 @@
 		<em:type>2</em:type>
 		<em:creator>lostdj</em:creator>
 		<em:description>Adds similar to Operas paste and go Ctrl+B hotkey (keyboard shortcut).</em:description>
-		<em:homepageURL>https://github.com/lostdj/FxExtPasteNGoShortcut/</em:homepageURL>
+		<em:homepageURL>https://github.com/lostdj/FxExtPasteNGoHtk/</em:homepageURL>
 		<em:contributor>lostdj - https://github.com/lostdj/</em:contributor>
 		<em:bootstrap>true</em:bootstrap>
 		<em:unpack>false</em:unpack>
