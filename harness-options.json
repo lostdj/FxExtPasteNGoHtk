@@ -1,0 +1,49 @@
+{
+ "enable_e10s": false, 
+ "is-sdk-bundled": true, 
+ "jetpackID": "jid0-6J80duZ9AglTEczDBpS5dYAnf9k@jetpack", 
+ "loader": "addon-sdk/lib/sdk/loader/cuddlefish.js", 
+ "main": "main", 
+ "mainPath": "lostdj/main", 
+ "manifest": {
+  "lostdj/main": {
+   "docsSHA256": null, 
+   "jsSHA256": "14bb2b08247f3208febd0520ce74008f8e2f8fba6be8653b913a491d7715f204", 
+   "moduleName": "main", 
+   "packageName": "lostdj", 
+   "requirements": {
+    "sdk/clipboard": "sdk/clipboard", 
+    "sdk/hotkeys": "sdk/hotkeys", 
+    "window/utils": "sdk/window/utils"
+   }, 
+   "sectionName": "lib"
+  }
+ }, 
+ "metadata": {
+  "addon-sdk": {
+   "description": "Add-on development made easy.", 
+   "keywords": [
+    "javascript", 
+    "engine", 
+    "addon", 
+    "extension", 
+    "xulrunner", 
+    "firefox", 
+    "browser"
+   ], 
+   "license": "MPL 2.0", 
+   "name": "addon-sdk"
+  }, 
+  "lostdj": {
+   "author": "lostdj", 
+   "description": "Adds paste and go keyboard shortcut.", 
+   "main": "main", 
+   "name": "lostdj", 
+   "version": "initial.rev75"
+  }
+ }, 
+ "name": "lostdj", 
+ "sdkVersion": "1.14", 
+ "staticArgs": {}, 
+ "verbose": false
+}
