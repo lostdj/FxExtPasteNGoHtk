@@ -4,7 +4,7 @@ var clipboard = require("sdk/clipboard");
   
 var png = Hotkey
 ({
-  combo: "control-b",
+  combo: "accel-b",
   onPress: function()
     {
       pngmain();

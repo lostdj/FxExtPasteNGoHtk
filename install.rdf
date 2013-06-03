@@ -3,7 +3,7 @@
 	<Description about="urn:mozilla:install-manifest">
 		<em:id>FxExtPasteNGoHtk@github.lostdj</em:id>
 		<em:name>Paste and Go Hotkey (Keyboard Shortcut)</em:name>
-		<em:version>0.1</em:version>
+		<em:version>0.2</em:version>
 		<em:type>2</em:type>
 		<em:creator>lostdj</em:creator>
 		<em:description>Adds similar to Operas paste and go Ctrl+B hotkey (keyboard shortcut).</em:description>
