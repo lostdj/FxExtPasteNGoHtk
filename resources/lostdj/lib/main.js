@@ -21,12 +21,18 @@ function pngmain()
 			cb = clipboard.get();
 
 			if(ub.focused)
-				newloc = ub.value + cb;
+				if(ub.selectionEnd-ub.selectionStart>0)
+				{
+					ub.mEditor.selection.deleteFromDocument();
+					newloc = ub.value + cb;
+				}
+				else
+					newloc = ub.value + cb;
 			else
 				newloc = cb;
 
 			ub.value = newloc;
-
+			
 			var evt = winutil.getFocusedWindow().document.createEvent("KeyEvents");
 			evt.initKeyEvent("keypress", true, false,
 				null,
