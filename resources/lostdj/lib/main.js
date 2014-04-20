@@ -21,7 +21,13 @@ function pngmain()
 			cb = clipboard.get();
 
 			if(ub.focused)
-				newloc = ub.value + cb;
+				if(ub.selectionEnd-ub.selectionStart>0)
+				{
+					ub.mEditor.selection.deleteFromDocument();
+					newloc = ub.value + cb;
+				}
+				else
+					newloc = ub.value + cb;
 			else
 				newloc = cb;
 
