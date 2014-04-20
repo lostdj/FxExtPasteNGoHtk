@@ -26,7 +26,6 @@ function pngmain()
 			if(ub.focused)
 				if(ub.selectionEnd - ub.selectionStart > 0)
 				{
-					ub.mEditor.selection.deleteFromDocument();
 					newloc =
 						  ub.value.slice(0, ub.selectionStart)
 						+ cb
