@@ -39,8 +39,7 @@
    "description": "Adds paste and go keyboard shortcut.", 
    "main": "main", 
    "name": "lostdj", 
-   "version": "initial.rev75",
-   "permissions": {"private-browsing": true}
+   "version": "0.3"
   }
  }, 
  "name": "lostdj", 
