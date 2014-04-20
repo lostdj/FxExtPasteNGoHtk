@@ -32,7 +32,7 @@ function pngmain()
 				newloc = cb;
 
 			ub.value = newloc;
-			
+
 			var evt = winutil.getFocusedWindow().document.createEvent("KeyEvents");
 			evt.initKeyEvent("keypress", true, false,
 				null,
