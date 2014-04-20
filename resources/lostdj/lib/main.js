@@ -17,17 +17,26 @@ function pngmain()
 		if(winutil.isBrowser(w))
 		{
 			ub = w.document.getElementById("urlbar");
+			if(ub == null)
+				continue;
+
 			newloc = "";
 			cb = clipboard.get();
 
 			if(ub.focused)
-				if(ub.selectionEnd-ub.selectionStart>0)
+				if(ub.selectionEnd - ub.selectionStart > 0)
 				{
 					ub.mEditor.selection.deleteFromDocument();
-					newloc = ub.value + cb;
+					newloc =
+						  ub.value.slice(0, ub.selectionStart)
+						+ cb
+						+ ub.value.slice(ub.selectionEnd);
 				}
 				else
-					newloc = ub.value + cb;
+					newloc =
+						  ub.value.slice(0, ub.selectionStart)
+						+ cb
+						+ ub.value.slice(ub.selectionStart);
 			else
 				newloc = cb;
 
