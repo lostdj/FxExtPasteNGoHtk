@@ -14,7 +14,7 @@ var png = Hotkey
 function pngmain()
 {
     for each (var w in winutil.windows())
-		if(winutil.isBrowser(w))
+		if(winutil.isBrowser(w) && winutil.isFocused(w))
 		{
 			ub = w.document.getElementById("urlbar");
 			if(ub == null)
@@ -42,14 +42,7 @@ function pngmain()
 
 			ub.value = newloc;
 
-			var evt = winutil.getFocusedWindow().document.createEvent("KeyEvents");
-			evt.initKeyEvent("keypress", true, false,
-				null,
-				false, false, false, false,
-				13,
-				0);
-			ub.focus();
-			ub.dispatchEvent(evt);
+			w.document.getElementById("go-button").click()
 
 			break;
 		}
