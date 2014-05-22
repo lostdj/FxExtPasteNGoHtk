@@ -41,7 +41,11 @@ function pngmain()
 
 			ub.value = newloc;
 
-			w.document.getElementById("go-button").click()
+			var gb;
+			if((gb = w.document.getElementById("urlbar-go-button")) != undefined && gb != null) // Omnibar addon compat.
+				return gb.click();
+			if((gb = w.document.getElementById("go-button")) != undefined && gb != null)
+				return gb.click();
 
 			break;
 		}
